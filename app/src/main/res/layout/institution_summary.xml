@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent">
+
+        <TextView
+            android:id="@+id/header"
+            android:text="@string/searchedInst"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="#94770c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="0dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="0dp"
+            android:textSize="@dimen/feedSmallText" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/progressBar"
+        layout="@layout/progress_bar" />
+
+    <RelativeLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/frame_inner_padding"
+        android:background="@color/transparent">
+
+        <TextView
+            android:id="@+id/institution"
+            android:textStyle="bold"
+            android:textSize="@dimen/feedBigText"
+            android:layout_width="@dimen/childTextLimit"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/address"
+            android:textSize="@dimen/feedMediumText"
+            android:layout_below="@id/institution"
+            android:layout_width="@dimen/childTextLimit"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/city"
+            android:textSize="@dimen/feedMediumText"
+            android:layout_below="@id/address"
+            android:layout_marginBottom="@dimen/frame_inner_padding"
+            android:layout_width="@dimen/childTextLimit"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_alignParentRight="true"
+            android:layout_width="@dimen/logo_inst_wh"
+            android:layout_height="@dimen/logo_inst_wh"
+            android:layout_marginEnd="@dimen/frame_inner_padding"
+            android:layout_marginStart="@dimen/standard_margin"
+            android:layout_marginBottom="@dimen/frame_inner_padding"
+            android:layout_marginTop="@dimen/frame_inner_padding"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/surveys"
+            android:text="Surveys: "
+            android:textSize="@dimen/feedMediumText"
+            android:layout_below="@id/city"
+            android:layout_marginEnd="@dimen/frame_inner_padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/positive"
+            android:textColor="@color/green"
+            android:textSize="@dimen/feedMediumText"
+            android:layout_toEndOf="@id/surveys"
+            android:layout_alignTop="@id/surveys"
+            android:layout_marginEnd="@dimen/standard_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/negative"
+            android:textColor="@color/red"
+            android:textSize="@dimen/feedMediumText"
+            android:layout_alignTop="@id/positive"
+            android:layout_toEndOf="@id/positive"
+            android:layout_marginBottom="@dimen/frame_inner_padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,37 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/favorite"
+        android:title="@string/favorite"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_star_border_black_24dp"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/share"
+        android:orderInCategory="100"
+        android:title="@string/shareWiki"
+        android:icon="@drawable/ic_share_white_18dp"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/addStory"
+        android:orderInCategory="100"
+        android:title="@string/addStory"
+        android:icon="@drawable/ic_add_white_24dp"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/addInstitution"
+        android:orderInCategory="100"
+        android:title="@string/addInstitution"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/addWiki"
+        android:orderInCategory="100"
+        android:title="@string/addWiki"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/logout"
+        android:orderInCategory="100"
+        android:title="@string/logout"
+        app:showAsAction="never" />
+</menu>

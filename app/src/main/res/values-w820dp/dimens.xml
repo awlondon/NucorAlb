@@ -1,0 +1,16 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="menu_icon_wh">50dp</dimen>
+    <dimen name="menu_icon_padding">15dp</dimen>
+    <dimen name="search_icon_wh">30dp</dimen>
+    <dimen name="standard_margin">10dp</dimen>
+    <dimen name="childTextLimit">200sp</dimen>
+    <dimen name="feedBigText">16sp</dimen>
+    <dimen name="feedSmallText">12sp</dimen>
+    <dimen name="feedMediumText">14sp</dimen>
+    <dimen name="frame_inner_padding">5dp</dimen>
+    <dimen name="frame_border_weight">1dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6b9bbf</color>
+    <color name="colorPrimaryDark">#6D6EB3</color>
+    <color name="colorAccent">#6dacef</color>
+    <color name="menuColor">#3a99e7</color>
+    <color name="menuHighlightColor">#df8600</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="frameGrey">#e4e4e4</color>
+    <color name="circleForCount">#42b0ff</color>
+    <color name="green">#2aae00</color>
+    <color name="red">#ff1100</color>
+    <color name="halfTransparent">#7dffffff</color>
+
+    <color name="black_overlay">#66000000</color>
+</resources>

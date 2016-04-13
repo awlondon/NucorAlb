@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:id="@+id/question"
+        android:text="What kind(s) of corruption was it?"
+        android:textSize="30dp"
+        android:layout_below="@id/tool_bar"
+        android:padding="20dp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_below="@id/question"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/appointmentOption"
+            android:text="Abuse of Discretion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/blackmailOption"
+            android:text="Blackmail"
+            android:layout_toRightOf="@id/appointmentOption"
+            android:layout_alignTop="@id/appointmentOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/briberyOption"
+            android:text="Bribery"
+            android:layout_below="@id/appointmentOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/embezzlementOption"
+            android:text="Embezzlement"
+            android:layout_alignLeft="@id/blackmailOption"
+            android:layout_alignTop="@id/briberyOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/extortionOption"
+            android:text="Extortion"
+            android:layout_below="@id/briberyOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/fraudOption"
+            android:text="Fraud"
+            android:layout_alignLeft="@id/embezzlementOption"
+            android:layout_alignTop="@id/extortionOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/nepotismOption"
+            android:text="Nepotism"
+            android:layout_below="@id/extortionOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/otherOption"
+            android:text="Other"
+            android:layout_alignLeft="@id/fraudOption"
+            android:layout_alignTop="@id/nepotismOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/continueButton"
+            android:text="Continue"
+            android:layout_gravity="right"
+            android:layout_alignLeft="@id/otherOption"
+            android:layout_below="@id/otherOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</RelativeLayout>

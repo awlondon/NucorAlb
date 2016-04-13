@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar" />
+
+    <include
+        android:id="@+id/button_menu"
+        layout="@layout/button_menu" />
+
+    <Spinner
+        android:id="@+id/spinnerCity"
+        android:padding="@dimen/frame_inner_padding"
+        android:layout_marginStart="@dimen/frame_inner_padding"
+        android:layout_marginEnd="@dimen/frame_inner_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Spinner
+        android:id="@+id/spinnerType"
+        android:padding="@dimen/frame_inner_padding"
+        android:layout_marginStart="@dimen/frame_inner_padding"
+        android:layout_marginEnd="@dimen/frame_inner_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <include
+        android:id="@+id/progressBar"
+        layout="@layout/progress_bar" />
+    <ListView
+        android:divider="@color/frameGrey"
+        android:dividerHeight="1dp"
+        android:id="@+id/lvFeed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <include
+        android:id="@+id/lvResults"
+        layout="@layout/search_results_list_view"/>
+</LinearLayout>

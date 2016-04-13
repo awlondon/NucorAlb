@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    tools:context="com.example.anticorruption.WikiPopUpActivity">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar" />
+
+    <include
+        android:id="@+id/progressBar"
+        layout="@layout/progress_bar" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/scrollableLayout"
+            android:layout_margin="@dimen/standard_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/updated"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/titleText"
+                android:textSize="30sp"
+                android:layout_marginBottom="@dimen/standard_margin"
+                android:layout_below="@id/updated"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/category"
+                android:layout_marginBottom="@dimen/standard_margin"
+                android:layout_below="@id/titleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/edit"
+                android:src="@drawable/ic_create_black_18dp"
+                android:alpha=".25"
+                android:layout_alignTop="@id/titleText"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_below="@id/category"
+                android:layout_marginBottom="@dimen/standard_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/tagsLayout"
+                android:orientation="vertical"
+                android:layout_below="@id/content"
+                android:layout_marginBottom="@dimen/standard_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/viewIcon"
+                android:src="@drawable/view_icon"
+                android:layout_below="@id/tagsLayout"
+                android:layout_alignParentEnd="true"
+                android:layout_width="24dp"
+                android:layout_height="24dp" />
+
+            <TextView
+                android:id="@+id/views"
+                android:layout_marginEnd="@dimen/frame_inner_padding"
+                android:paddingTop="2dp"
+                android:layout_toStartOf="@id/viewIcon"
+                android:layout_alignTop="@id/viewIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/created"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/viewIcon"
+                android:layout_marginBottom="@dimen/standard_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

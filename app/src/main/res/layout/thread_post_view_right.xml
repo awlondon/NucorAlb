@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutBox"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:background="@color/transparent"
+            android:padding="@dimen/frame_inner_padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/username"
+                android:text="user12345"
+                android:autoText="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/frame_inner_padding" />
+
+            <ImageView
+                android:id="@+id/profileIcon"
+                android:scaleType="fitXY"
+                android:layout_alignRight="@id/username"
+                android:layout_below="@id/username"
+                android:layout_width="@dimen/post_icon_wh"
+                android:layout_height="@dimen/post_icon_wh"
+                android:layout_marginBottom="@dimen/standard_margin" />
+
+            <TextView
+                android:id="@+id/titleText"
+                android:text="More thoughts"
+                android:textStyle="bold"
+                android:layout_toLeftOf="@id/profileIcon"
+                android:layout_alignTop="@id/profileIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/frame_inner_padding"
+                android:layout_marginBottom="@dimen/frame_inner_padding" />
+
+            <TextView
+                android:id="@+id/date"
+                android:text="10 min"
+                android:layout_alignTop="@id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/content"
+                android:text="I think that there are many problems with this. For one, there is no way to check up on what is happening."
+                android:textAlignment="textEnd"
+                android:layout_below="@id/titleText"
+                android:layout_toLeftOf="@id/profileIcon"
+                android:layout_marginRight="@dimen/frame_inner_padding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/frame_inner_padding" />
+
+            <ImageView
+                android:id="@+id/upVotesIv"
+                android:src="@drawable/ic_arrow_up"
+                android:paddingTop="@dimen/frame_inner_padding"
+                android:layout_marginBottom="@dimen/standard_margin"
+                android:layout_below="@id/content"
+                android:layout_width="18dp"
+                android:layout_height="18dp" />
+
+            <TextSwitcher
+                android:id="@+id/upVotes"
+                android:text="28"
+                android:textColor="@color/green"
+                android:layout_marginLeft="@dimen/frame_inner_padding"
+                android:layout_toRightOf="@id/upVotesIv"
+                android:layout_alignTop="@id/upVotesIv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/downVotesIv"
+                android:src="@drawable/ic_arrow_down"
+                android:paddingTop="@dimen/frame_inner_padding"
+                android:layout_marginBottom="@dimen/standard_margin"
+                android:layout_below="@id/content"
+                android:layout_toRightOf="@id/upVotes"
+                android:layout_marginLeft="@dimen/standard_margin"
+                android:layout_width="18dp"
+                android:layout_height="18dp" />
+
+            <TextSwitcher
+                android:id="@+id/downVotes"
+                android:text="12"
+                android:textColor="@color/red"
+                android:layout_marginLeft="@dimen/frame_inner_padding"
+                android:layout_toRightOf="@id/downVotesIv"
+                android:layout_alignTop="@id/downVotesIv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/replyIv"
+                android:src="@drawable/ic_reply_black_24dp"
+                android:alpha=".25"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

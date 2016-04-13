@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar" />
+
+    <include
+        android:id="@+id/progressBar"
+        layout="@layout/progress_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="@dimen/standard_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Institution Name: "
+                android:textSize="@dimen/feedBigText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/institutionEt"
+                android:padding="@dimen/standard_margin"
+                android:textAlignment="viewStart"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Address: "
+                android:textSize="@dimen/feedBigText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/addressEt"
+                android:padding="@dimen/standard_margin"
+                android:inputType="textPostalAddress"
+                android:textAlignment="viewStart"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="City: "
+                android:textSize="@dimen/feedBigText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:id="@+id/citySpinner"
+                android:padding="@dimen/standard_margin"
+                android:inputType="textPostalAddress"
+                android:textAlignment="viewStart"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Type of Institution: "
+                android:textSize="@dimen/feedBigText"
+                android:layout_marginBottom="@dimen/frame_inner_padding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:id="@+id/typeSpinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/frame_inner_padding"
+                android:layout_marginBottom="@dimen/frame_inner_padding" />
+
+            <TextView
+                android:text="Building or logo image: "
+                android:textSize="@dimen/feedBigText"
+                android:layout_marginBottom="@dimen/frame_inner_padding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/addImageButton"
+                android:background="#6b6b6b"
+                android:text="Add Image"
+                android:textColor="@color/white"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:visibility="gone"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+            <TextView
+                android:text="Manager Name: "
+                android:textSize="@dimen/feedBigText"
+                android:inputType="textPersonName"
+                android:layout_marginBottom="@dimen/frame_inner_padding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/managerEt"
+                android:padding="@dimen/standard_margin"
+                android:textAlignment="viewStart"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Phone Number: "
+                android:textSize="@dimen/feedBigText"
+                android:layout_marginBottom="@dimen/frame_inner_padding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/phoneEt"
+                android:padding="@dimen/standard_margin"
+                android:inputType="phone"
+                android:textAlignment="viewStart"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_gravity="right"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/addButton"
+                    android:text="Add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/clearButton"
+                    android:text="Clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

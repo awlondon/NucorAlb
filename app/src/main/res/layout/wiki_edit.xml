@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:isScrollContainer="true"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar" />
+
+    <include
+        android:id="@+id/progressBar"
+        layout="@layout/progress_bar" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/scrollableLayout"
+            android:layout_margin="@dimen/standard_margin"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/updateIv"
+                android:src="@drawable/ic_send_black_18dp"
+                android:alpha=".75"
+                android:layout_gravity="right"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/contentEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/titleEditText"
+                android:hint="Title of Article"
+                android:inputType="textCapWords"
+                android:isScrollContainer="false"
+                android:layout_marginBottom="@dimen/standard_margin"
+                android:textSize="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:id="@+id/categorySpinner"
+                android:layout_marginBottom="@dimen/standard_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/contentEditText"
+                android:hint="Content of the entry"
+                android:isScrollContainer="true"
+                android:gravity="top|start"
+                android:inputType="textMultiLine"
+                android:layout_marginBottom="@dimen/standard_margin"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <LinearLayout
+                android:id="@+id/tagsLayout"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

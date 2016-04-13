@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.corruptionapp.StoryPopUpActivity">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar" />
+
+    <include
+        android:id="@+id/progressBar"
+        layout="@layout/progress_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/story"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:background="@color/white"
+            android:isScrollContainer="true"
+            android:textSize="@dimen/feedBigText"
+            android:padding="@dimen/standard_margin"
+            android:keepScreenOn="true" />
+
+        <RelativeLayout
+            android:padding="@dimen/standard_margin"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/type"
+                android:layout_marginTop="@dimen/frame_inner_padding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_alignTop="@id/type"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/viewIcon"
+                android:src="@drawable/view_icon"
+                android:layout_below="@id/date"
+                android:layout_alignParentRight="true"
+                android:layout_width="24dp"
+                android:layout_height="24dp" />
+
+            <TextView
+                android:id="@+id/views"
+                android:layout_marginRight="@dimen/frame_inner_padding"
+                android:paddingTop="2dp"
+                android:layout_toLeftOf="@id/viewIcon"
+                android:layout_alignTop="@id/viewIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <FrameLayout
+            android:id="@+id/institutionFrame"
+            android:paddingTop="@dimen/frame_border_weight"
+            android:paddingBottom="@dimen/frame_border_weight"
+            android:background="@color/frameGrey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ExpandableListView
+            android:id="@+id/expListView"
+            android:background="@color/white"
+            android:dividerHeight="1dp"
+            android:divider="@color/frameGrey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

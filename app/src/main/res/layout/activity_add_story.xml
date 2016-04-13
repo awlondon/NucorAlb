@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar" />
+
+    <include
+        android:id="@+id/progressBar"
+        layout="@layout/progress_bar" />
+
+    <RelativeLayout
+        android:layout_margin="@dimen/standard_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/border"
+            android:background="@color/frameGrey"
+            android:padding="@dimen/frame_border_weight"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/standard_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/addStoryEt"
+                android:hint="enter story here"
+                android:inputType="textMultiLine"
+                android:padding="@dimen/standard_margin"
+                android:height="200dp"
+                android:gravity="top|left"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/corruptionTypeSpinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/corruptionTypeTv"
+            android:layout_below="@id/border"
+            android:layout_marginLeft="@dimen/frame_inner_padding"
+            android:layout_marginBottom="@dimen/frame_inner_padding" />
+
+        <TextView
+            android:id="@id/corruptionTypeTv"
+            android:text="Corruption Type: "
+            android:textSize="@dimen/feedBigText"
+            android:layout_alignTop="@id/corruptionTypeSpinner"
+            android:layout_marginBottom="@dimen/frame_inner_padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/institutionSpinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/corruptionTypeSpinner"
+            android:layout_marginBottom="@dimen/frame_inner_padding"
+            android:layout_below="@id/corruptionTypeSpinner" />
+
+        <TextView
+            android:id="@+id/institutionTv"
+            android:text="Institution: "
+            android:textSize="@dimen/feedBigText"
+            android:layout_alignTop="@id/institutionSpinner"
+            android:layout_below="@id/corruptionTypeTv"
+            android:layout_marginBottom="@dimen/frame_inner_padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/reportButton"
+            android:text="Report"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/institutionSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/clearButton"
+            android:text="Clear"
+            android:layout_toLeftOf="@id/reportButton"
+            android:layout_marginRight="@dimen/frame_inner_padding"
+            android:layout_below="@id/institutionSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

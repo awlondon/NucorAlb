@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#b55a3f</color>
+    <color name="colorPrimaryDark">#9f5a30</color>
+    <color name="colorAccent">#f9b7a4</color>
+    <color name="menuColor">#FF9142</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="frameGrey">#e4e4e4</color>
+
+    <color name="black_overlay">#66000000</color>
+</resources>

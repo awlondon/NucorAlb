@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/lblListHeader"
+        android:text="Corruption Stories"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/standard_margin"
+        android:paddingStart="20dp" />
+
+    <TextView
+        android:id="@+id/groupChildren"
+        android:text="21"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle"
+        android:layout_alignParentEnd="true"
+        android:padding="@dimen/frame_inner_padding"
+        android:layout_centerVertical="true" />
+</RelativeLayout>
