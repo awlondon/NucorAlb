@@ -1,6 +1,6 @@
 # NucorAlb – Anti-Corruption Android App
 
-NucorAlb (short for No Corruption Albania) is a native Android application that provides a hub for sharing corruption‑related stories, forum posts, wiki articles and details about institutions. The repository contains the complete Android Studio project for the app.
+NucorAlb is a native Android application that provides a hub for sharing corruption‑related stories, forum posts, wiki articles and details about institutions. The repository contains the complete Android Studio project for the app.
 
 ## What the app does
 
